@@ -1,0 +1,145 @@
+  /* @media (max-width:1024px)------------ */ 
+  @media (max-width:1024px) {
+    
+  }
+
+
+
+
+
+
+/* ----------Break points Media Quarys
+  @media (max-width:991px)------------ */
+
+  @media (max-width:991px) {
+    header,
+    header.sticky{
+        padding: 15px 5%;
+    }
+    footer{
+        padding: 15px 5%
+    }
+    section{
+        padding: 50px 5%;
+    }
+    .navlist a{
+        padding: 6px 15px;
+    }
+    :root{
+        --big-font:2.2rem;
+        --normal-font:1.8rem;
+        --neon-box-shadow:0 0 .8rem #12f7ff;
+        --h2-font:3rem;
+    }
+
+    /* .home-content {
+        margin-top: 5rem;
+    } */
+
+    .social-icons{
+        margin-top: 2rem;
+    }
+
+    .home-content h1 {
+        text-wrap: wrap;
+      }
+      
+
+      /* .home-content {
+        max-width: 600px;
+        margin-top: 120px;
+    } */
+
+}
+
+/*  @media (max-width: 768px)------------ */ 
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        transition: all .4s ease;
+    }
+
+    #menu-icon.bx-x {
+        transform: rotate(-180deg);
+    }
+
+    .navlist {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        padding: 0 5%;
+        transition: all .45s ease;
+    }
+
+    .navlist a {
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .navlist.open {
+        display: flex;
+    }
+
+    .home{
+        grid-template-columns: 1fr;
+    }
+
+    .home-image{
+        margin-bottom: 5rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        margin-top: 60px;
+        
+      }
+
+      .skill-main{
+        grid-template-columns: 1fr;
+      }
+
+      .fillter-button{
+        margin: 2.5rem 0;
+      }
+
+      footer p{
+        font-size: .8rem;
+    }
+}
+
+
+
+/* ---@media (max-width:420px)------------ */ 
+
+
+@media (max-width:420px){
+    html{
+        font-size: 80%;
+    }
+    footer p{
+        font-size: .6rem;
+    }
+
+    .fillter-button .btn{
+        font-size: .8rem;
+    }
+
+    .img-about img {
+        width: 300px;
+    }
+
+    img-about p {
+        font-size: 1rem;
+    }
+
+    .info-about1,.info-about2,.info-about3{
+        display: none;
+    }
+}
