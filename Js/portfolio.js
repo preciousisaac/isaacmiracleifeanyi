@@ -1,3 +1,4 @@
-// mix it up portfolio section
+// --------------mix it up portfolio section-------------//
+
 var mixer = mixitup('.portfolio-gallery');
 

@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="../Stylesheet/style.css">
     <link rel="stylesheet" href="../Stylesheet/media-quary.css">
     <link rel="stylesheet" href="../Stylesheet/circle-loader.css">
-    <link rel="icon" href="../My-Image/E-logo1 (1).png" type="image/x-icon">
+    <link rel="icon" href="../My-Image/E-logo3 (1).png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -50,39 +52,32 @@
      <!--About section----------------------------------------->
 
      <section id="about" class="about">
-        <div class="img-about">
+        <div class="img-about" data-aos="zoom-in-up">
             <img src="../My-Image/champion-porth.jpg" alt="">
-            <div class="info-about1">
-                <span>4+</span>
-                <p>Years of Experience</p>
-            </div>
-            <div class="info-about2">
-                <span>10+</span>
-                <p>Project complete</p>
-            </div>
-            <div class="info-about3">
-                <span>10+</span>
-                <p>Happy clonts</p>
-            </div>
         </div>
 
 
-        <div class="about-content">
-            <span>let me introduce myself</span>
-            <h2>About me</h2>
-            <h3>A story of good</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maiores inventore,
-                ipsa cumque ullam quas possimus placeat sequi itaque accusantium perspiciatis saepe 
-                rerum suscipit quibusdam ea nam obcaecati consectetur, facilis eveniet quae velit
-                 quam id qui excepturi. Eius, est illo!                 
+        <div class="about-content" data-aos="zoom-in-up">
+            <h2>About me</h2> <br>
+            <p>  Hi, I’m Isaac Precious Ikenna, a seasoned web developer with years of experience in crafting responsive, user-friendly websites and web applications. My passion for coding and problem-solving drives me to stay at the forefront of web technologies and design trends. Over the years, I’ve honed my skills in HTML, CSS, JavaScript, and various frameworks, ensuring each project I undertake is built with precision and creativity.
+                I thrive on turning complex challenges into seamless digital experiences, and I am committed to delivering high-quality work that meets the unique needs of each client. My portfolio showcases a range of projects, from sleek corporate websites to dynamic e-commerce platforms, reflecting my versatility and dedication to excellence.       
+                When I’m not coding, I enjoy exploring new tech innovations, contributing to open-source projects, and continuously learning to keep my skills sharp. Let’s connect and create something amazing together.               
             </p>
 
             <div class="btn-box">
                 <a href="#" class="btn">Read More!</a>
             </div>
         </div>
-
      </section>
+
+        <!-- header JS -->
      <script src="../Js/header.js"></script>
+        <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>

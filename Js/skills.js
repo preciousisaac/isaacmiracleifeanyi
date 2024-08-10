@@ -1,5 +1,5 @@
 
-// circle skills // /// // ////////////
+// ------------------Professional Skills---------------- // 
 
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem=>{

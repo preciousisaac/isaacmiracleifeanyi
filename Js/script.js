@@ -1,5 +1,5 @@
 
-/////////////// Words changeText  //////////////////////////////
+//------------------- Words changeText--------------------//
 
 let words = document.querySelectorAll(".word");
 words.forEach((word)=>{
