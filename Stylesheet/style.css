@@ -364,6 +364,7 @@ a.btn:nth-child(2)::before{
     margin-top: 90px;
     box-shadow: var(--neon-box-shadow);
     background-color: #12f7ff;
+    user-select: none;
 
 }
 
@@ -392,6 +393,7 @@ a.btn:nth-child(2)::before{
     border-top: 20px solid #12f7ff;
     border-bottom: 20px solid #ffffffe2;
     margin-top: 40px;
+    user-select: none;
 } 
 
 .about-content {
@@ -646,11 +648,14 @@ a.btn:nth-child(2)::before{
     letter-spacing: .4px;
     margin-left: 1.3rem;
     color: var(--text-color);
-    /* border: 1px solid #12f7ff; */
+    border: 1px solid #fdfdfd;
+    padding: 2px 4px;
+   
 }
 
 .fillter-button .btn:hover{
     color: var(--hover-color);
+    border: 1px solid #12f7ff;
 }
 
 .portfolio-gallery{

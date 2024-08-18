@@ -55,20 +55,28 @@
         <div class="img-about" data-aos="zoom-in-up">
             <img src="../My-Image/champion-porth.jpg" alt="">
         </div>
-
-
+    
         <div class="about-content" data-aos="zoom-in-up">
             <h2>About me</h2> <br>
-            <p>  Hi, I’m Isaac Precious Ikenna, a seasoned web developer with years of experience in crafting responsive, user-friendly websites and web applications. My passion for coding and problem-solving drives me to stay at the forefront of web technologies and design trends. Over the years, I’ve honed my skills in HTML, CSS, JavaScript, and various frameworks, ensuring each project I undertake is built with precision and creativity.
+            <p>
+                Hi, I’m Isaac Precious Ikenna, a seasoned web developer with years of experience in crafting responsive, user-friendly websites and web applications. My passion for coding and problem-solving drives me to stay at the forefront of web technologies and design trends. Over the years, I’ve honed my skills in HTML, CSS, JavaScript, and various frameworks, ensuring each project I undertake is built with precision and creativity.
                 I thrive on turning complex challenges into seamless digital experiences, and I am committed to delivering high-quality work that meets the unique needs of each client. My portfolio showcases a range of projects, from sleek corporate websites to dynamic e-commerce platforms, reflecting my versatility and dedication to excellence.       
-                When I’m not coding, I enjoy exploring new tech innovations, contributing to open-source projects, and continuously learning to keep my skills sharp. Let’s connect and create something amazing together.               
+                <span id="more-text" style="display: none; color: #f5f5f5;">
+                    When I’m not coding, I enjoy exploring new tech innovations, contributing to open-source projects, and continuously learning to keep my skills sharp. Let’s connect and create something amazing together.
+                </span>
             </p>
-
-            <div class="btn-box">
-                <a href="#" class="btn">Read More!</a>
+    
+            <div class="btn-box">   
+                <a href="#" id="toggle-btn" class="btn butn">Read More!</a>
             </div>
         </div>
-     </section>
+    </section>
+
+
+
+    
+
+    
 
         <!-- header JS -->
      <script src="../Js/header.js"></script>
@@ -78,6 +86,21 @@
 <script>
   AOS.init();
 </script>
+
+
+    <!-- -----------Implement toggle functionality to show/hide additional text in the 'About Me' section ------------>
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        const moreText = document.getElementById('more-text');
+        let isTextVisible = false;
+    
+        toggleBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            isTextVisible = !isTextVisible;
+            moreText.style.display = isTextVisible ? 'inline' : 'none';
+            toggleBtn.textContent = isTextVisible ? 'Read Less!' : 'Read More!';
+        });
+    </script>
 
 </body>
 </html>

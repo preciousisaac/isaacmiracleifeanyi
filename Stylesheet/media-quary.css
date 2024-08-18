@@ -37,7 +37,7 @@
         font-size: 1.5rem;
     }
 
-    .btn-box {
+    .btn-box, .butn{
         width: 100%;
         display: flex;
         justify-content: center; 
@@ -86,9 +86,9 @@
         margin-top: 3rem;
     }
 
-    .home-content h1 {
-        text-wrap: wrap;
-      }
+    /* .home-content h1 {
+        text-wrap: nowrap;
+      } */
 
 
     .about {
