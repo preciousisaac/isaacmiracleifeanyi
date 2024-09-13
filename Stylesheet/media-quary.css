@@ -14,6 +14,7 @@
     .change-text h3 {
         font-size: 1.5rem;
     }
+ 
 
     /*---------- About-css---------- */
 
@@ -94,7 +95,16 @@
     .about {
         flex-direction: column;
         margin-top: 60px;
-    }     
+    }   
+
+    .btn-box, .butn{
+        width: 100%;
+        display: flex;
+        justify-content: start; 
+        margin-top: 1.5rem; 
+    } 
+    
+    
 
 }
 
@@ -140,6 +150,7 @@
     .home-image{
         margin-bottom: 5rem;
     }
+    
 
     .about{
         flex-direction: column;
@@ -158,6 +169,8 @@
       footer p{
         font-size: .8rem;
     }
+
+    
 }
 
 

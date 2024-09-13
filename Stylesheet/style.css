@@ -116,6 +116,7 @@ span {
 }
 
 
+/*----------- circle loader----------------------- */
 
 .hidden {
     visibility: hidden;
@@ -354,7 +355,7 @@ a.btn:nth-child(2)::before{
 
 .img-box img{
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     height: auto;
     border-radius: 20%;
     border-left: 20px solid #ffffffe2;
@@ -385,7 +386,7 @@ a.btn:nth-child(2)::before{
 }
 
 .img-about img{
-    max-width: 400px;
+    max-width: 380px;
     height: auto;
     border-radius: 20%;
     border-left: 20px solid #ffffffe2;
@@ -394,6 +395,7 @@ a.btn:nth-child(2)::before{
     border-bottom: 20px solid #ffffffe2;
     margin-top: 40px;
     user-select: none;
+    background-color: #12f7ff;
 } 
 
 .about-content {
