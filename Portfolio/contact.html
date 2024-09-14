@@ -22,7 +22,7 @@
   
     <header>
         <div class="logo">
-            <img src="../My-Image/E-logo3 (1).png" alt="" width="100px" height="auto">
+            <img src="../My-Image/E-logo3 (1).png" alt="" width="100px" height="auto" loading="lazy">
              <!-- <h5 class="log">champion-tech</h5> -->
         </div>
         <ul class="navlist">
@@ -50,16 +50,24 @@
 
 
      <!--Contact section----------------------------------------->
-     <section id="contact" class="contact">
+
+     <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modalMessage">Message goes here</p>
+        </div>
+    </div>
+    
+
+    <section id="contact" class="contact">
         <div class="main-text">
             <span>Ask me questions</span>
             <h2>Contact Me</h2>
         </div>
     
-        <form action="https://formspree.io/f/myzgwoab" method="POST">
+        <form id="contactForm" action="https://formspree.io/f/myzgwoab" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="_replyto" placeholder="Your Email" required>
-            <input type="text" name="address" placeholder="Your Address">
             <input type="text" name="phone" placeholder="Your Phone Number">
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <div class="btn-box formbtn">
@@ -67,6 +75,7 @@
             </div>
         </form>
     </section>
+    
     
 
 
@@ -77,6 +86,10 @@
             <!-- <a href="../index.html"><i class='bx bx-up-arrow-alt'></i></a> -->
        </footer>
 
+
+
+
+
       <!-- header JS --> 
     <script src="../Js/header.js"></script>
        <!-- AOS JS -->
@@ -85,6 +98,21 @@
 <script>
   AOS.init();
 </script>
+
+
+
+<script>
+    document.querySelector('form').addEventListener('submit', function() {
+        // Allow the form to submit naturally (to let Formspree show the confirmation)
+        setTimeout(() => {
+            this.reset(); // Clear the form fields after a short delay
+        }, 1000); // Delay clearing to ensure Formspree has time to process
+    });
+</script>
+
+
+
+
 
 </body>
 </html>
