@@ -58,65 +58,76 @@
             <span>Ways I Can Support You</span>
             <h2>Our services</h2>
         </div>
-
         <div class="section-services">
             <div class="service-box"> 
                 <i class='bx bx-webcam service-icon'></i>
-                <h3>Web Development </h3>
-                <p>Designing and building fully tailored websites that reflect the client’s brand and meet specific business objectives, and ensuring they are user-friendly.
+                <h3>Web Development</h3>
+                <p>
+                    Designing and building fully tailored websites that reflect the client’s brand and meet specific business objectives, ensuring they are user-friendly.
+                    <span class="more-text" style="display: none; color: #bdbdbd;"> This includes responsive designs, SEO-friendly structure, and optimized load times to improve user experience.</span>
                 </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">View</a>
+                    <a href="#" class="toggle-btn btn butn">view</a>
                 </div>           
             </div>
-
+        
             <div class="service-box">
-                <i class='bx bx-library service-icon' ></i>
+                <i class='bx bx-library service-icon'></i>
                 <h3>Frameworks and Libraries</h3>
-                <p>Utilizing front-end frameworks and libraries like React, Angular, or Vue.js to build dynamic and interactive web applications.
+                <p>
+                    Utilizing front-end frameworks and libraries like React, Angular, or Vue.js to build dynamic and interactive web applications.
+                    <span class="more-text" style="display: none; color: #bdbdbd;"> These tools speed up development, ensure maintainability, and allow us to create rich user experiences with fewer resources.</span>
                 </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">View</a>
+                    <a href="#" class="toggle-btn btn butn">view</a>
                 </div>  
             </div>
-
+        
             <div class="service-box">
                 <i class='bx bxl-sketch service-icon'></i>
                 <h3>Website Security</h3>
-                <p>Applying robust security measures to safeguard websites against cyber threats and vulnerabilities, and securing websites with firewalls.
+                <p>
+                    Applying robust security measures to safeguard websites against cyber threats and vulnerabilities.
+                    <span class="more-text" style="display: none; color: #bdbdbd;"> This includes setting up secure firewalls, regular security audits, and implementing SSL certificates.</span>
                 </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">View</a>
+                    <a href="#" class="toggle-btn btn butn">view</a>
                 </div>  
             </div>  
             
             <div class="service-box">
                 <i class='bx bxl-medium service-icon'></i>
                 <h3>Responsive Designs</h3>
-                <p>Ensuring websites offer seamless user experiences across all devices, from desktops to mobile phones, optimizing for both speed and usability.
+                <p>
+                    Ensuring websites offer seamless user experiences across all devices, from desktops to mobile phones.
+                    <span class="more-text" style="display: none; color: #bdbdbd;"> Our designs adapt beautifully to various screen sizes, optimizing usability and accessibility.</span>
                 </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">View</a>
+                    <a href="#" class="toggle-btn btn butn">view</a>
                 </div>  
             </div> 
-
+        
             <div class="service-box">
-                <i class='bx bxs-conversation service-icon' ></i>
+                <i class='bx bxs-conversation service-icon'></i>
                 <h3>Animation and Interactivity</h3>
-                <p>Animation and interactivity boost user engagement and enhance the visual appeal of websites, creating captivating and enjoyable experiences.
+                <p>
+                    Animation and interactivity boost user engagement and enhance the visual appeal of websites.
+                    <span class="more-text" style="display: none; color: #bdbdbd;"> Interactive elements create enjoyable user experiences and can highlight essential features effectively.</span>
                 </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">View</a>
+                    <a href="#" class="toggle-btn btn butn">view</a>
                 </div>  
             </div> 
-
+        
             <div class="service-box">
-                <i class='bx bxl-gitlab service-icon' ></i>
+                <i class='bx bxl-gitlab service-icon'></i>
                 <h3>Version Control</h3>
-                <p>Using version control systems like GitHub or GitLab for collaboration to manage and track changes in the codebase.
+                <p>
+                    Using version control systems like GitHub or GitLab for collaboration to manage and track changes in the codebase.
+                    <span class="more-text" style="display: none; color: #bdbdbd;"> Version control allows for seamless collaboration, tracking changes over time, and rollback to previous versions when needed.</span>
                 </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">View</a>
+                    <a href="#" class="toggle-btn btn butn">view</a>
                 </div>  
             </div> 
         </div>
@@ -132,6 +143,22 @@
    <script>
      AOS.init();
    </script>
+
+   <script>
+    // Get all toggle buttons and add event listeners
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+    toggleButtons.forEach(toggleBtn => {
+        toggleBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const moreText = this.parentElement.previousElementSibling.querySelector('.more-text'); // Get corresponding more-text
+            let isTextVisible = moreText.style.display === 'inline'; // Check current visibility
+
+            moreText.style.display = isTextVisible ? 'none' : 'inline'; // Toggle visibility
+            this.textContent = isTextVisible ? 'View!' : 'Hide!'; // Update button text
+        });
+    });
+</script>
    
 </body>
 </html>
